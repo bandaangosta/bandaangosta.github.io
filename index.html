@@ -5,39 +5,43 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>JLO: the profile</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="JLO's profile landing page">
-		<meta property="og:title" content="JLO's profile" />
-		<meta property="og:url" content="https://jlo.cl" />
-		<meta property="og:description" content="Electronics engineer, gadget builder, meme specialist">
-		<meta property="og:image" content="https://jlo.cl/images/jlo_small.png">
-		<meta property="og:type" content="website" />
-		<meta property="og:locale" content="en_US" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload landing">
-		<div id="page-wrapper">
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>José L. Ortiz</h2>
-							<p>Electronics engineer, gadget builder, meme specialist<br />
-							</p>
-						</header>
-						<span class="image"><img src="images/jlo1_cropped.resized.jpg" alt="" /></span>
-					</div>
-				</section>
+<head>
+	<title>JLO: the profile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="JLO's profile landing page">
+	<meta property="og:title" content="JLO's profile" />
+	<meta property="og:url" content="https://jlo.cl" />
+	<meta property="og:description" content="Electronics engineer, gadget builder, meme specialist">
+	<meta property="og:image" content="https://jlo.cl/images/jlo_small.png">
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en_US" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-			<!-- One -->
-			<section id="one" class="spotlight style1 bottom">
-				<span class="image fit main"><img src="images/composite3.jpg" alt="" /></span>
-				<!-- <div class="content">
+<body class="is-preload landing">
+	<div id="page-wrapper">
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content">
+				<header>
+					<h2>José L. Ortiz</h2>
+					<p>Electronics engineer, gadget builder, meme specialist<br />
+					</p>
+				</header>
+				<span class="image"><img src="images/jlo1_cropped.resized.jpg" alt="" /></span>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="spotlight style1 bottom">
+			<span class="image fit main"><img src="images/composite3.jpg" alt="" /></span>
+			<!-- <div class="content">
 					<div class="container">
 						<div class="row">
 							<div class="col-4 col-12-medium">
@@ -64,32 +68,54 @@
 					</div>
 				</div>
 				<a href="#two" class="goto-next scrolly">Next</a> -->
-			</section>
+		</section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="mailto:jlortiz@uc.cl" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://twitter.com/bandaangosta" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.linkedin.com/in/jose-ortiz-garcia/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/bandaangosta" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; JLO. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="gotcha" class="icon solid alt fa-envelope" id="mlink"><span class="label">Email</span></a>
+				</li>
+				<li><a href="https://twitter.com/bandaangosta" class="icon brands alt fa-twitter"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://www.linkedin.com/in/jose-ortiz-garcia/"
+						class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/bandaangosta" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; JLO. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
 
-		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<script>
+		// Script to prevent e-mail scraping for them nasty spammers
+		// https://mattwthomas.com/blog/stop-email-scraping/
 
-	</body>
+		/* 1. define variables */
+		var me = "jlortiz";
+		var place = "uc.cl";
+
+		/* 2. find email link to replace */
+		var elink = document.getElementById("mlink");
+
+		/* 3. replace link href with variables  */
+		elink.href = `mailto:${me}@${place}`;
+	</script>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
